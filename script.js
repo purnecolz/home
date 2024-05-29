@@ -1,4 +1,3 @@
-// background
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Welkom op purnecol search!');
     
@@ -31,17 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function animateStars() {
-        for (let star of stars) {
-            star.alpha += (Math.random() - 0.5) * 0.02;
-            if (star.alpha < 0) star.alpha = 0;
-            if (star.alpha > 1) star.alpha = 1;
-        }
-        drawStars();
-        requestAnimationFrame(animateStars);
-    }
-
     drawStars();
-    animateStars();
 });
-
