@@ -1,3 +1,4 @@
+// background
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Welkom op purnecol search!');
     
